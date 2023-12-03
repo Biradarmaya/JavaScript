@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+        // let promise=new Promise(function(resolve,reject){});
+        // console.log(promise);
+
+       function weather()
+       {
+        return new Promise(function(resolve,reject){
+        reject("rejected data");
+       });
+       }
+       
+    //    let promise=weather();
+    //    console.log(promise);
+
+     weather().catch((data)=>{
+        console.log(data);
+     });
+
+
+
+    //  function weather()
+    //    {
+    //     return new Promise(function(resolve,reject){
+    //     resolve("resolved data");
+    //    });
+    // }
+    
+    // weather().then((data)=>{
+    //     console.log(data);
+    //  });
+
+
+    
+
+function weather()
+{
+    return new Promise((resolve,reject)=>{
+  setTimeout(() => {
+    resolve("HTML")
+  },2000);
+
+    });
+}
+
+function onSuccess(data){
+    console.log("is there");
+    console.log(`success ${data}`);
+}
+
+function onfailure(error){
+    console.log(`failed ${error}`);
+}
+
+ weather().then(onSuccess).then(onfailure);
+
+
+// function weather()
+// {
+//     return new Promise((resolve,reject)=>{
+//   setTimeout(() => {
+//     reject("HTML")
+//   },2000);
+
+//     });
+// }
+//  weather().then(onSuccess).catch(onfailure);
+
+
+
+
+
+// setTimeout(() => {
+//     console.log("executed");
+// },7000);
+
+// setTimeout(() => {
+//     console.log("i will execute before executed");
+// },3000);
+
+
+
+// setInterval(() => {
+//     console.log("hello");
+// },3000);
+
+
+
+
+    </script>
+</body>
+</html>

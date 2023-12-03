@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<!-- query selector -->
+<!-- QS returns the object when it target the first element of target selector -->
+<!-- query selector uses css symbol like # -->
+
+<section class="text">i am first section</section>
+<section class="text">i am second section</section>
+
+<section class="text">i am second section</section>
+
+<section class="text">i am second section</section>
+
+<script>
+    let d=document.querySelectorAll('.text');
+    console.log(d);
+
+    let queryS=document.querySelector('.text');
+    console.log(queryS);
+    queryS.innerHTML="it is changed";
+    queryS.style.color="blue";
+    queryS.style.fontSize="100px";
+
+    let allQuery=document.querySelectorAll('.text')
+    console.log(allQuery);
+    allQuery[0].style.backgroundColor="red";
+    allQuery[0].innerHTML="heading";
+
+
+    //creating element
+    let createEle=document.createElement('h1');
+    console.log(createEle);
+    let createEle1=document.createElement('div');
+    console.log(createEle1);
+    createEle1.innerText="yes i am div";
+    createEle.innerText="yes i am heading one";
+
+    //append and appendchild
+
+    //appendchild
+    //appendChild is an JS method
+    //appendchild takes an element as an argument (as its last child) to insert on other element
+    //it takes only one elemnet
+    //it does not take string as an argument
+
+    createEle.appendChild(createEle1)
+    document.body.appendChild(createEle)
+    //document.body.appendChild(createEle)
+
+    //append
+    //append is an JS method
+    //append takes an 'n' no of elements to insert on another element
+    //it takes string as an argument
+
+    let div1=document.createElement('section');
+    console.log(div1);
+    div1.innerText="section";
+    let div2=document.createElement('aside');
+    console.log(div2);
+    div2.innerText="aside";
+    document.body.append(div1,div2)
+
+</script>
+
+</body>
+</html>

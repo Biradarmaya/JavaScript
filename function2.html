@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+//         var d=50;
+//         function one(){
+//             var a=20;
+        
+//         function two(){
+//             var b=30;
+//             console.log(a);
+        
+//         function three(){
+//             var c=40;
+//             console.log(b);
+//         }
+//         three()
+//     }
+//     two()
+// }
+// one()
+
+//Higher order function
+ function one(two){
+    var a=10;
+    two();
+
+ }
+ one(two)
+ function two(){
+    console.log("hello");
+ }
+
+ let arrowFun=(a,b)=>{
+    return a+b;
+}
+console.log(arrowFun(10,20));
+
+let exp=function()
+{
+    console.log("guys please come to the class early")
+}
+console.log(exp());
+
+//1.put the function inside the expression called parenthesis
+// (function()
+//     {
+//         console.log("helloHii");
+
+//     })
+//     ()
+
+    //uses of life
+    //the variable declared inside the life wont polute the outside things
+    
+    //it wont pollute the global variale means the variables declared insid the life is totally different from the  variable s declared outside the life
+    //we use life for data priva
+
+
+    // var variable="your name"
+    // function demo(name,day)
+    // {
+    //     console.log("this is first one" + name+" is "+day);
+    // }
+    // demo(variable,21)
+
+
+    // var variable="my name"
+    // function test(name,day)
+    // {
+    //     console.log("this is second" + name+" is "+day);
+    // }
+    // test(variable,21)
+
+   //how to use life for multiple functions
+   //just use expression semicolon after invoking
+
+   //.........6.IIFE.................
+   (function()
+   {
+    console.log("good morning");
+   })
+   ();
+
+   (function()
+   {
+    console.log("good neight");
+   })
+   ();
+
+   (function()
+   {
+    console.log("good evening");
+   })
+   ();
+
+  //............. IIFE..........
+
+(function(){
+let name="ABC";
+function demo1(wish,great){
+console.log(" the first IIFE Hello"+wish+great);
+}
+demo1("GM",name)
+})
+();
+
+(function(){
+let name="ABC";
+function demo1(wish,great){
+console.log(" the second IIFE Hello"+wish+great);
+}
+demo1("GM",name)
+})
+();
+
+//...........7.Nestd function.............
+
+//the function using inside another function 
+//we acheive  closure and lexicle scope in nested function
+ function gp()
+ {
+    let a=100;
+    let b=200;
+    let y=400;
+
+    function p()
+    {
+       let d=300;
+        console.log(a);
+    function c()
+    {
+        console.log(b);
+        // console.log(d);
+
+        function m(){
+        
+            console.log(d);
+            function n(){
+                let x=500;
+                console.log(y);
+            }
+            n()
+        }
+        m()
+
+        }
+        c()
+    }
+    p()
+ }
+ gp()
+
+ //this
+ //this keyword value will change accordingly where we are using this keyword
+ console.log(this); //window
+ console.log(window);//window
+
+ console.log(this==window); //true
+
+ function aa()
+ {
+    console.log(this);
+ }
+ aa()
+
+
+
+//when you are using this keyword inside the normal function of the object is pointing to the object
+let obj={
+    id:100,
+    guest:function()
+    {
+        console.log(this.id);
+    }
+ }
+ console.log(obj);
+ obj.guest()
+
+
+ 
+ 
+//when you are using this keyword inside the arrow function of object will get undifined
+// bcz this keyword does not works in arrow function
+
+let obj1={
+    id:200,
+    guest:()=>{
+        console.log(this.id);
+    }
+    
+ }
+ 
+ obj1.guest()
+
+
+
+
+    </script>
+</body>
+</html>

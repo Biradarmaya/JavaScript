@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+
+    <script>
+      //  alert(document.cookie);
+       // let cookie=(document.cookie="name=maya");
+        //console.log(cookie);
+
+        let key=prompt("enter the name");
+        let value=prompt("enter the value");
+
+       // let cookie1=document.cookie=`${key} and ${value}`;
+        //console.log(cookie1);
+        
+       // document.cookie=`${key} and ${value}`;
+      // document.cookie=`${encodeURIComponent(key)}=${encodeURIComponent(value)}`;
+
+
+
+
+      //sessionStorage
+      // sessionStorage.setItem("id",202);
+      // sessionStorage.setItem("name","xyz");
+       //sessionStorage.setItem("age","20");
+
+       //get items
+      // let a=sessionStorage.getItem("id");
+      // console.log(a);
+
+       //remove
+      // let b=sessionStorage.removeItem("id");
+
+       //clear
+      // sessionStorage.clear();
+
+
+
+       //localstorage
+       //setitem
+       localStorage.setItem("id",202);
+       localStorage.setItem("name","maya");
+       localStorage.setItem("age",20);
+
+       //getitem
+       let b=localStorage.getItem("id");
+       console.log(b);
+
+       //removeitem
+       localStorage.removeItem("age");
+
+       //clear
+       localStorage.clear();
+
+
+
+
+
+    </script>
+</body>
+</html>

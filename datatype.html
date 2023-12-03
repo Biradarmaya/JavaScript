@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+    <script>
+        let num=100;
+        console.log(num,typeof num);
+
+        let num1=100.1;
+        console.log(num1,typeof num1);
+
+        let num2=100/2;
+        console.log(num2,typeof num2);
+
+        let num3=Number(false);//true,"true","hello","34",
+        console.log(num3,typeof num3);
+
+        
+        let num4=Number(34);//true,"true","hello","34",
+        console.log(num4,typeof num4);
+
+        
+        console.log(5+5+"5"-5);
+        console.log(5+5+"5"+5);
+        console.log(5+5+"5"+5+10+"hello"-"1");
+
+        console.log(100+null*2);
+        console.log(56*3+5+"hello"+null)
+
+
+     //string
+    
+        let str="java script";
+        console.log(str,typeof str);
+
+        let str1='HTML';
+        console.log(str1,typeof str1);
+
+        let str2=`css`;
+        console.log(str2,typeof str2);
+
+        let a="web"
+        console.log(a,typeof a);
+        let b="web"
+        console.log(b,typeof b);
+
+        // let empID=421;
+        // let empsal=10000;
+        // let empname="Mahiii";
+
+        // console.log(`the employe name ${empName} has an id ${empID} has sallery `)
+
+        let str4 ='"hello"';
+        console.log(str4);
+
+        let str5="'hello'";
+        console.log(str5);
+
+        let str3="`hello`";
+        console.log(str3, typeof str3);
+
+        //string method 
+
+        let myVar="guys please prepare aptitude otherwise  hogeee";
+        console.log(myVar.length);//to check the lenth if the string
+
+        console.log(myVar.charAt(7));//to see the character at the index od 7
+
+        console.log(myVar.indexOf("s")); // gives the index of the character s
+
+        console.log(myVar.concat(" definately"),("for sure")); //it will concat  the n-number of string
+
+        let myStd="are awesome";
+        console.log(myStd.includes('a')); //it checks the characters present in the string if it is true otherwise false
+
+        console.log(myStd.slice(2,8));//it takes one or  two arguments are there it includes first one excludes second one
+        
+        console.log(myStd.split("").reverse().join(""));
+
+        //split-"converts string to an array ";
+        //reverse-"reverse an string";
+        //join-"convert array to string";
+
+        console.log(myStd.lastIndexOf('a'));
+
+        let demo="   hello  good moring ";
+        console.log(demo.trim());
+        console.log(demo.trimStart())
+
+        console.log(demo.trimEnd())
+
+        let test='7';
+        console.log(test.padStart(8,"0"));
+        console.log(test.padEnd(3,"0"));
+        console.log(test.padStart(5,"1"));
+        console.log(test.padEnd(6,"3"));
+
+        let d="kello";
+        console.log(d.replace('k','h'));
+
+        let str6="Good morning";
+        console.log(str6.endsWith('g'));//check the charecter in the last
+
+         let str7="Good morning";
+        console.log(str6.startsWith('x'));//check the charecter in the first
+
+         //Boolean
+        let varBoolean=true;
+        console.log(varBoolean,typeof varBoolean);
+
+        let varBoolean1=false;
+        console.log(varBoolean1,typeof varBoolean1);
+
+        let varBoolean2=Boolean("ganesh");
+        console.log(varBoolean2,typeof varBoolean2);
+
+        //note
+        //apart from zero all are true
+        
+        //begin
+
+        //to store big value
+
+        //the number data type will store the value until 1.797693*10 rais to 308
+
+        //reprent  the bigInt by 'n'
+        let h=1n;
+        console.log(h,typeof h);
+
+        let bigNum=10998467889n;
+        console.log(bigNum,typeof bigNum);
+
+        let bigNum1=BigInt("100");
+        console.log(bigNum1,typeof bigNum1);
+
+        let bigNum2=BigInt(1);
+        console.log(bigNum2,typeof bigNum2);
+
+        // let bigNum3=BigInt("String");
+        // console.log(bigNum3,typeof bigNum3); //error we can not convert string to bigInt
+
+        let bigNum4=BigInt(false);//true
+        console.log(bigNum4,typeof bigNum4);
+
+        //undefined
+        // a variable does not have any value or missing an initialization 
+
+        var purColor;
+        console.log(purColor);
+
+        // var purColor1=undefined(true);
+        // console.log(purColor1);//not possible bcz undefined is not a function 
+
+        //Null
+
+        let age=null;
+        console.log(age,typeof null);
+
+        //null is an error or a bug?
+        //bcz null is p.d.t,the type of null is object, object is non p.d.t
+
+        let age1=Number(null);
+        console.log(age1);//null
+
+        let age2=String(null);
+        console.log(age2);
+
+        let age3=Boolean(null);
+        console.log(age3);
+
+        // let age4=BigInt(null);
+        // console.log(age4); //can not convert null to bigInt
+
+        let age5=BigInt(1);
+        console.log(age5);
+
+    
+
+
+
+        
+
+        
+
+        
+
+        
+
+
+
+        
+
+
+        
+
+
+
+
+
+        
+
+
+
+
+    </script>
+</body>
+</html>
